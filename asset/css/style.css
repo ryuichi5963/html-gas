@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+body {
+  background-color: antiquewhite;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+div:has(form) {
+  width: min(800px, 80vw);
+  margin: 0 auto;
+}
+
+span {
+  color: red;
+}
+
+/*
+* フォーム
+*/
+.form-input {
+  display: flex;
+  width: 100%;
+}
+
+.form-input:not(:first-of-type) {
+  margin: 15px 0 0 0;
+}
+
+/* フォームラベル */
+.form-input label {
+  display: block;
+  width: 30%;
+}
+
+/* ラジオボタン */
+.form-input .radio {
+  display: flex;
+}
+
+.form-input .radio * {
+  margin: 0;
+}
+
+.form-input .radio input {
+  margin: 0 5px;
+}
+
+.form-input .radio:first-of-type input {
+  margin-left: 0;
+}
+
+/* 送信ボタン */
+button {
+  display: block;
+  margin: 15px auto;
+}
+
+/* レスポンス */
+.err {
+  width: fit-content;
+  margin: 5px auto 20px 10px;
+  color: red;
+}
+
+@media screen and (width <= 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  /*
+  * フォーム
+  */
+  .form-input {
+    flex-direction: column;
+  }
+
+  /* フォームラベル */
+  .form-input label {
+    width: auto;
+  }
+
+  /* ラジオボタン */
+  .form-input .radio:first-of-type input {
+    margin-left: 5px;
+  }
+}

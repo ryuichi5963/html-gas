@@ -1,0 +1,14 @@
+# node_modulesフォルダは除外
+/node_modules/
+
+# 隠しファイルは.gitignore以外は除外
+.*
+!.gitignore
+
+# 個別設定
+package-lock.json
+package.json
+japanese_pub.css
+/asset/js/
+json_doPost.js
+index_post_test.html
