@@ -65,6 +65,7 @@ button {
   width: fit-content;
   margin: 5px auto 20px 10px;
   color: red;
+  text-align: left;
 }
 
 @media screen and (width <= 768px) {
@@ -87,5 +88,9 @@ button {
   /* ラジオボタン */
   .form-input .radio:first-of-type input {
     margin-left: 5px;
+  }
+
+  .err {
+    margin-right: 10px;
   }
 }
